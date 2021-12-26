@@ -1,7 +1,7 @@
 {
-	"name": "phaser3-parcel-template",
+	"name": "wizard",
 	"version": "1.0.0",
-	"description": "A template project for Phaser 3 using Parceljs",
+	"description": "Wizard on Firetop Mountain clone",
 	"scripts": {
 		"start": "parcel src/index.html -p 8000",
 		"build": "parcel build src/index.html --out-dir dist",
@@ -11,9 +11,9 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ourcade/phaser3-parcel-template.git"
+		"url": "https://github.com/zachbonham/wizard.git"
 	},
-	"homepage": "https://github.com/ourcade/phaser3-parcel-template",
+	"homepage": "https://github.com/zachbonham/wizard",
 	"devDependencies": {
 		"@babel/core": "^7.10.5",
 		"@babel/plugin-proposal-class-properties": "^7.10.4",
@@ -26,6 +26,8 @@
 	},
 	"dependencies": {
 		"parcel": "^2.0.1",
+		"parcel-plugin-clean-easy": "^1.0.2",
+		"parcel-plugin-static-files-copy": "^2.4.3",
 		"phaser": "^3.55.2"
 	},
 	"parcelCleanPaths": [
