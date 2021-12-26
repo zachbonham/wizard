@@ -4,8 +4,7 @@
 	"description": "Wizard on Firetop Mountain clone",
 	"scripts": {
 		"start": "parcel src/index.html -p 8000",
-		"build": "parcel build src/index.html --dist-dir dist",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build": "parcel build src/index.html --dist-dir dist"		
 	},
 	"author": "supertommy",
 	"license": "MIT",
