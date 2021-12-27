@@ -4,9 +4,9 @@
 	"description": "Wizard on Firetop Mountain clone",
 	"scripts": {
 		"start": "parcel src/index.html -p 8000",
-		"build": "parcel build src/index.html --dist-dir dist"		
+		"build": "parcel build src/index.html --dist-dir dist"
 	},
-	"author": "supertommy",
+	"author": "zachbonham",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
@@ -24,9 +24,6 @@
 		"typescript": "^4.5.3"
 	},
 	"dependencies": {
-		"parcel": "^2.0.1",
-		"parcel-plugin-clean-easy": "^1.0.2",
-		"parcel-plugin-static-files-copy": "^2.4.3",
 		"phaser": "^3.55.2"
 	},
 	"parcelCleanPaths": [

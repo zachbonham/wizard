@@ -1,6 +1,7 @@
 import Phaser, { Scale } from 'phaser'
 
 import Preloader from './scenes/Preloader'
+import CombatScene from './scenes/Combat'
 import Game from './scenes/Game'
 
 const config : Phaser.Types.Core.GameConfig= {
@@ -15,7 +16,7 @@ const config : Phaser.Types.Core.GameConfig= {
 		},
 	
 	},
-	scene: [Preloader, Game],
+	scene: [Preloader, CombatScene, Game],
 	scale: {
 		zoom: 2
 	},

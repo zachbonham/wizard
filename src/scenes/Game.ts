@@ -17,13 +17,21 @@ export default class GameScene extends Phaser.Scene
 
     create()
     {
+        
         const map = this.make.tilemap ({key: 'dungeon'});
+        const combatMap = this.make.tilemap ({key: 'combat'});
+
         const tileset = map.addTilesetImage('dungeon', 'tiles');
+        const combatTileset = map.addTilesetImage('combat', 'combat-tiles');
         
         const floor = map.createLayer("floor", tileset);
         const walls = map.createLayer("walls", tileset);
 
+        const combatFloor = combatMap.createLayer("floor", combatTileset);
+        const combatWalls = combatMap.createLayer("walls", combatTileset);
+
         walls.setCollisionByProperty({ collides: true });
+        combatWalls.setCollisionByProperty({collides: true});
 /*
         const debugGraphics = this.add.graphics().setAlpha(0.7);
         
