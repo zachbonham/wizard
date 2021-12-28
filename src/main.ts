@@ -16,7 +16,7 @@ const config : Phaser.Types.Core.GameConfig= {
 		},
 	
 	},
-	scene: [Preloader, CombatScene, Game],
+	scene: [Preloader, Game],
 	scale: {
 		zoom: 2
 	},
