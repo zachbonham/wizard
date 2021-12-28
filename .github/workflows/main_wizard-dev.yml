@@ -26,11 +26,11 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
-          
-      - name: copy tiles and characters to dist folder
+
+      - name: copy ./public to dist folder
         run: |
-          cp ./tiles/* ./dist
-          cp ./characters/* ./dist
+          cp -R ./public  ./dist
+          
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
