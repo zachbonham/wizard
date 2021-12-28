@@ -29,7 +29,8 @@ jobs:
 
       - name: copy ./public to dist folder
         run: |
-          cp -R ./public  ./dist
+          cp -R ./public/tiles  ./dist
+          cp -R ./public/characaters ./dist
           
       
       - name: Upload artifact for deployment job
